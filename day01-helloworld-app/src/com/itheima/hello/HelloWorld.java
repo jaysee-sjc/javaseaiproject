@@ -1,5 +1,7 @@
 package com.itheima.hello;
 
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("HelloWorld");
@@ -10,5 +12,15 @@ public class HelloWorld {
             }
             System.out.println();
         }
+
+
+        int input;
+        Scanner sc=new Scanner(System.in);
+        do {
+            System.out.print("请输入 1-10 之间的数字：");
+            input = sc.nextInt();
+        } while (input < 1 || input > 10);
+
+
     }
 }
